@@ -35,7 +35,7 @@ It may include:
 Install dependencies (suggested):
 
 ```bash
-pip install pandas numpy matplotlib seaborn textblob
+pip install pandas numpy matplotlib textblob
 ```
 
 Optional for advanced link analysis:
