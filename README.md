@@ -14,8 +14,8 @@ This repository contains analysis notebooks for evaluating and optimizing the pe
 ### 1. `Push Analysis.ipynb`
 This notebook explores **push notification performance metrics** to identify patterns that drive engagement and conversion.  
 It typically includes:
-- **Data preprocessing:** cleaning message titles, bodies, and timestamps.  
-- **Exploratory analysis:** open rates, click-through rates (CTR), delivery success.  
+- **Data preprocessing:** cleaning message titles, bodies, and timestamps.
+- **Exploratory analysis:** open rates, text formatting success, push image colorfulness.  
 - **Segmentation:** comparing performance across message types, audiences, or time windows.  
 - **Visualization:** trends over time, device or platform differences, and message type heatmaps.  
 - **Insights:** highlighting underperforming campaigns and suggesting content or timing adjustments.
@@ -25,25 +25,7 @@ This notebook analyzes **link behavior and destination tracking** from Braze pus
 It may include:
 - **Mapping Braze campaign links** to final destination URLs using link resolution or UTM parsing.  
 - **Attribution modeling:** measuring which links or push types drive the most conversions.  
-- **Navigation flow visualization:** building Sankey or network diagrams of user click paths.  
 - **Error and redirect detection:** identifying broken or misdirected campaign links.  
-
----
-
-## ⚙️ Setup and Requirements
-
-Install dependencies (suggested):
-
-```bash
-pip install pandas numpy matplotlib textblob
-```
-
-Optional for advanced link analysis:
-```bash
-pip install requests beautifulsoup4
-```
-
-These notebooks were developed using **Python 3.10+** and **Jupyter Notebook**.
 
 ---
 
@@ -57,8 +39,8 @@ These notebooks were developed using **Python 3.10+** and **Jupyter Notebook**.
 
 ## 📈 Expected Outputs
 
-- Tables summarizing **delivery, open, and click-through rates**.  
-- Charts comparing **performance across campaigns**.  
+- Tables summarizing **open rate correlations with 20+ variables**.  
+- Charts comparing **performance across campaigns**.
 - Exportable CSVs or plots for reporting to marketing or product teams.  
 - Final insights section proposing **changes to push frequency, content, or targeting.**
 
@@ -67,6 +49,6 @@ These notebooks were developed using **Python 3.10+** and **Jupyter Notebook**.
 ## 🧩 Future Improvements
 
 - Integrate automated **Braze API pulls** for daily refresh.  
-- Build a **dashboard (e.g., Streamlit)** for live visualization.  
+- Build a **dashboard** for live visualization.  
 - Implement **A/B testing logic** to evaluate notification variants.  
 - Use **NLP sentiment analysis (TextBlob)** on message content to correlate tone with engagement.
